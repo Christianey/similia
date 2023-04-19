@@ -36,4 +36,6 @@ const Paragraph: FC<ParagraphProps> = forwardRef<
   );
 });
 
+Paragraph.displayName = "Paragraph"
+
 export default Paragraph;

@@ -11,14 +11,15 @@ const SignInButton: FC<SignInButtonProps> = ({}) => {
 
   const signInWithGoogle = async () => {
     setIsloading(true);
+    
     try {
       await signIn("google");
     } catch (error) {
-      toast({
-        title: "Error signing in",
-        message: "Please try again",
-        type: "error",
-      });
+      // toast({
+      //   title: "Error signing in",
+      //   message: "Please try again",
+      //   type: "error",
+      // });
     }
   };
 

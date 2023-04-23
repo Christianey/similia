@@ -1,10 +1,12 @@
 import { FC } from 'react'
+import type { Metadata } from 'next'
 
-interface DashboardProps {
-  
+export const metadata: Metadata = {
+  title: "Simlia | Dashboard",
+  description: "Free and open-source Similarity API"
 }
 
-const Dashboard: FC<DashboardProps> = ({}) => {
+const Dashboard: FC = ({}) => {
   return <div>Dashboard</div>
 }
 
